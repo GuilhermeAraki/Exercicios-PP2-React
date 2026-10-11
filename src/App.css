@@ -1,0 +1,283 @@
+/* Layout Principal */
+.app-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1e293b;
+}
+
+.app-header {
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.app-header h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 0.5rem 0;
+}
+
+.app-subtitle {
+  color: #64748b;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+/* Grid de Exercícios */
+.exercicios-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.exercicio-secao {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 1.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.exercicio-secao h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 0.5rem 0;
+}
+
+.secao-desc {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin: 0 0 1.25rem 0;
+  line-height: 1.5;
+}
+
+.secao-desc code {
+  background: #f1f5f9;
+  color: #0d9488;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.componentes-linha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.componentes-coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  max-width: 650px;
+}
+
+/* Cards Genéricos */
+.card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07);
+}
+
+.card-titulo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0;
+}
+
+.subtexto {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Botões */
+.btn {
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primario {
+  background-color: #0d9488;
+  color: #ffffff;
+}
+
+.btn-primario:hover {
+  background-color: #0f766e;
+}
+
+.btn-perigo {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+.btn-perigo:hover {
+  background-color: #dc2626;
+}
+
+.btn-secondary {
+  background-color: #e2e8f0;
+  color: #334155;
+}
+
+.btn-secondary:hover {
+  background-color: #cbd5e1;
+}
+
+.btn-warning {
+  background-color: #f59e0b;
+  color: #ffffff;
+}
+
+.btn-warning:hover {
+  background-color: #d97706;
+}
+
+.btn-info {
+  background-color: #0284c7;
+  color: #ffffff;
+}
+
+.btn-info:hover {
+  background-color: #0369a1;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  text-decoration: underline;
+  align-self: center;
+}
+
+.btn-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Contador (Slide 26) */
+.contador-card {
+  width: 200px;
+  align-items: center;
+  text-align: center;
+}
+
+.contador-valor {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+/* Produto (Slide 27) */
+.produto-card {
+  width: 220px;
+}
+
+.produto-preco {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0d9488;
+  margin: 0;
+}
+
+/* Tarefa (Slide 28) */
+.tarefa-card {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.tarefa-card.tarefa-concluida {
+  border-color: #22c55e;
+  background-color: #f0fdf4;
+}
+
+.tarefa-titulo {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.tarefa-titulo.riscado {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+/* Conversor (Slide 29) */
+.conversor-card {
+  width: 260px;
+}
+
+.input-conversor {
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input-conversor:focus {
+  border-color: #0d9488;
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+}
+
+.resultado-conversao {
+  background: #e2e8f0;
+  padding: 0.6rem;
+  border-radius: 8px;
+  text-align: center;
+  color: #0f172a;
+  font-size: 1rem;
+}
+
+/* Enquete (Slide 30) */
+.enquete-card {
+  width: 300px;
+}
+
+.enquete-status {
+  background: #f1f5f9;
+  padding: 0.5rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #334155;
+}
